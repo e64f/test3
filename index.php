@@ -19,6 +19,9 @@ switch ($_REQUEST['mod']) {
     case 'auth':
         $controller->actionAuth();
         break;
+    case 'exit':
+        $controller->actionExit();
+        break;
     case 'fadd-task':
         $controller->actionFaddTask();
         break;

@@ -25,7 +25,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 {if $session.auth == 1}
-                    <li><a href="/exit.php">Exit</a></li>
+                    <li><a href="/index.php?mod=exit">Exit</a></li>
                 {else}
                     <li><a  href="/index.php?mod=auth">Auth</a></li>
                 {/if}

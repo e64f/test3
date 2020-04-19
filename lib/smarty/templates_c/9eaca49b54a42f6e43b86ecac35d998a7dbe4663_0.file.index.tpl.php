@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-04-19 06:17:10
+/* Smarty version 3.1.34-dev-7, created on 2020-04-19 07:11:30
   from 'F:\OpenServer\domains\aaa.loc\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e9bc2b6a431a3_87022027',
+  'unifunc' => 'content_5e9bcf725d4800_25533625',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9eaca49b54a42f6e43b86ecac35d998a7dbe4663' => 
     array (
       0 => 'F:\\OpenServer\\domains\\aaa.loc\\templates\\index.tpl',
-      1 => 1587266087,
+      1 => 1587269480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e9bc2b6a431a3_87022027 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e9bcf725d4800_25533625 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@ function content_5e9bc2b6a431a3_87022027 (Smarty_Internal_Template $_smarty_tpl)
 
             <ul class="nav navbar-nav navbar-right">
                 <?php if ($_smarty_tpl->tpl_vars['session']->value['auth'] == 1) {?>
-                    <li><a href="/exit.php">Exit</a></li>
+                    <li><a href="/index.php?mod=exit">Exit</a></li>
                 <?php } else { ?>
                     <li><a  href="/index.php?mod=auth">Auth</a></li>
                 <?php }?>

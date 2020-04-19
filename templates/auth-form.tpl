@@ -1,8 +1,14 @@
 
 
     <div class="col-md-6 col-sm-12">
+        {if $mess != ''}
+            <div class="alert alert-danger" role="alert">
+                {$mess}
+            </div>
+        {/if}
         <div class="login-form">
-            <form action="auth.php" method="post">
+            <form action="index.php" method="get">
+                <input name="mod" type="hidden" value="auth">
                 <div class="form-group">
                     <label>Login</label>
                     <input name="login" type="text" class="form-control" placeholder="Login">

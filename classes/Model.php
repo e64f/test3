@@ -3,7 +3,7 @@
 
 class Model {
     private $db;
-    private $config;
+    public $config;
 
     function __construct()
     {

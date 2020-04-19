@@ -52,7 +52,8 @@ class View
         return $this->generateHtml($content);
     }
 
-    public function generateAuthForm() {
+    public function generateAuthForm($mess) {
+        $this->smarty->assign('mess', $mess);
         $content = $this->smarty->fetch("auth-form.tpl");
         return $this->generateHtml($content);
     }

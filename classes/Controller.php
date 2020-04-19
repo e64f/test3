@@ -44,7 +44,25 @@ class Controller {
 	}
 
     public function actionAuth() {
-        $this->view->generateAuthForm();
+	    $mess = "";
+	    if ( isset($_REQUEST['login']) and isset($_REQUEST['passw']) ) {
+            if ( $this->model->config['login'] == $_REQUEST['login'] and $this->model->config['passw'] == $_REQUEST['passw']) {
+                $_SESSION['auth'] = 1;
+                header("Location: /");
+            }
+            else
+            {
+                $mess = "Auth error.";
+
+            }
+        }
+
+        $this->view->generateAuthForm($mess);
+    }
+
+    public function actionExit() {
+        $_SESSION['auth'] = 0;
+        header("Location: /");
     }
 
     public function actionFaddTask() {
